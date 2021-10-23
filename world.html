@@ -1,0 +1,770 @@
+<html lang="en">
+<head>
+  <title>Splunk Enterprise Certified Architect </title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS Files -->
+  <link href="css/bootstrap.min.css 01.css" rel="stylesheet" media="screen">
+  <link href="css/font-awesome.min.css 02.css" rel="stylesheet">
+  <link href="css/pe-icon-7-stroke.css 03.css" rel="stylesheet">
+  <link href="css/animate.css 04.css" rel="stylesheet" media="screen">
+  <link href="css/owl.theme.css 05.css" rel="stylesheet">
+  <link href="css/owl.carousel.css 06.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet" media="screen"> 
+		<link href="css/styles1.css 08.css" rel="stylesheet" media="screen">    
+
+  <style>
+    /*	Gallery 1
+    /*----------------------------------------------------*/
+    
+    /* Gallery Item
+     * -------------------------- */
+     
+    #isotope-gallery-container .col-md-3 {
+        margin-right: -1px;
+    }
+    
+    .gallery-item-wrapper {
+        padding-bottom: 25px;
+    }
+    .gallery-item {
+        overflow: hidden;
+        -webkit-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+        border-radius: 3px;
+    }
+    .flush .gallery-item {
+        border-radius: 0;
+    }
+    .gallery-item .gallery-thumb {
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .gallery-item .gallery-thumb img {
+        -webkit-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+      
+    }
+    
+    .gallery-item:hover .gallery-thumb img {
+        transform: scale(1.1);
+    }
+    
+    .gallery-item .gallery-thumb .image-overlay {
+        background-color: #2c3e50;
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        filter: alpha(opacity=0);
+        -webkit-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+    }
+    
+    .gallery-item:hover .gallery-thumb .image-overlay {
+        opacity: 0.50;
+        filter: alpha(opacity=50);
+    }
+    
+    .gallery-item .gallery-thumb .gallery-zoom, .gallery-item .gallery-thumb .gallery-link {
+        width: 45px;
+        height: 45px;
+        text-align: center;
+        background-color: #002e5b;
+        display: none;
+        line-height: 45px;
+        position: absolute;
+        top: 50%;
+        margin-top: -22px;
+        padding-top: 2px;
+        font-size: 18px;
+        color: #fff;
+        display: block;
+        border-radius: 2px;
+    }
+    
+    .gallery-item .gallery-thumb .gallery-zoom:hover, .gallery-item .gallery-thumb .gallery-link:hover {
+        background-color: #feae3c;;
+        color:  #002e5b;
+    }
+    
+    .gallery-item .gallery-thumb .gallery-zoom:focus, .gallery-item .gallery-thumb .gallery-link:focus {
+      outline: none;
+    }
+    
+    .gallery-item .gallery-thumb .gallery-link {
+        right: 0;
+        margin-right: -45px;
+        -webkit-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+    }
+    
+    .gallery-item .gallery-thumb .gallery-zoom {
+        left: 0;
+        margin-left: -45px;
+        -webkit-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+    }
+    
+    .gallery-item:hover .gallery-thumb .gallery-zoom {
+        display: block;
+        left: 50%;
+        margin-left: -48px;
+    }
+    
+    .gallery-item:hover .gallery-thumb .gallery-link {
+        display: block;
+        right: 50%;
+        margin-right: -48px;
+    }
+    
+    .gallery-item .gallery-details {
+        text-align: center;
+        padding-top: 20px;
+        background-color: #fff;
+        border: 2px solid #ecf0f1;
+        border-top: 0;
+        overflow: hidden;
+    }
+    
+    .gallery-item .gallery-details h5 {
+        margin: 0;
+        font-size: 1em;
+        font-weight: 700;
+        position: relative;
+    }
+    
+    .gallery-item .gallery-details p {
+        font-size: .9em;
+    }
+    
+    
+    /* Gallery Filter
+     * -------------------------- */
+    .filter {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 60px 0;
+        text-align: center;
+    }
+    .filter li {
+        display: inline-block;
+        margin: 0;
+    }
+    .filter li:before {
+        display: inline-block;
+        content: "/";
+        padding: 0 25px 0 19px;
+        color: rgba(0,0,0,0.20);
+    }
+    .filter li:first-child:before {
+        display: none;
+    }
+    .filter li a {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 14px;
+        color: #777777;
+    }
+    .filter li a:hover,
+    .filter li a:focus,
+    .filter li a.active {
+        color:#002e5b;
+        text-decoration: none;
+    }
+    
+    /* Isotope Animating
+     * -------------------------- */
+    .isotope,
+    .isotope .isotope-item {
+      /* change duration value to whatever you like */
+        -webkit-transition-duration: 0.8s;
+        -moz-transition-duration: 0.8s;
+        -ms-transition-duration: 0.8s;
+        -o-transition-duration: 0.8s;
+        transition-duration: 0.8s;
+    }
+    
+    .isotope {
+        -webkit-transition-property: height, width;
+        -moz-transition-property: height, width;
+        -ms-transition-property: height, width;
+        -o-transition-property: height, width;
+        transition-property: height, width;
+    }
+    
+    .isotope .isotope-item {
+        -webkit-transition-property: -webkit-transform, opacity;
+        -moz-transition-property: -moz-transform, opacity;
+        -ms-transition-property: -ms-transform, opacity;
+        -o-transition-property: -o-transform, opacity;
+        transition-property: transform, opacity;
+    }
+    
+    /**** disabling Isotope CSS3 transitions ****/
+    
+    .isotope.no-transition,
+    .isotope.no-transition .isotope-item,
+    .isotope .isotope-item.no-transition {
+        -webkit-transition-duration: 0s;
+        -moz-transition-duration: 0s;
+        -ms-transition-duration: 0s;
+        -o-transition-duration: 0s;
+        transition-duration: 0s;
+    }
+    
+    
+    
+    
+    
+    /*	Gallery 1 MEDIA QUERIES
+    /*----------------------------------------------------*/
+    
+    /* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) {
+      
+        
+      
+    }
+    
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+      
+    
+      
+    }
+    
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+      
+      
+      
+    }
+    
+    
+    </style>
+        <!-- Font Awesome -->
+        <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> 
+      </head>
+      
+      <body>
+       
+       
+        <!-- NAVIGATION -->
+        <div id="menu">
+          <nav class="navbar-wrapper navbar-default navbar-fixed-top ">
+            <div class="container">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-themers">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand site-name" href="#top"><img src="css/logo.png" alt="logo"></a>
+              </div>
+           
+              <div id="navbar-scroll" class="collapse navbar-collapse navbar-themers navbar-right">
+                <ul class="nav navbar-nav">
+                  <li class="Home"><a href="#Home" class="scroll-link">Home</a></li>
+                  <li class="AboutUs"><a href="#AboutUs" class="scroll-link">AboutUs</a></li>
+                  <li><a href="#features" class="#scroll-link">Training & Courses</a></li>
+                  <li><a href="#consulting" class="#scroll-link">Consulting</a></li>
+                  <li><a href="#trainers" class="#scroll-link">Trainers</a></li>
+                  <li><a href="#institutes" class="#scroll-link">Institutes</a></li> 
+                  <li><a href="#certification" class="#scroll-linkn">Certification</a></li>
+                  <li><a href="#contact us" class="#scroll-link">Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <!-- NAVIGATION end-->
+        
+        
+        Splunk Core Certified Advanced Power User
+        
+        
+       
+        <!-- intro section -->
+        <section id="Home" style="padding-top:10px;">
+          <div id="intro" style="padding-top:3%;">
+            <div class="container">
+              <div class="row">
+                <!-- feature image -->
+                <div class="col-md-4 feature-2-pic wow fadeInLeft">
+                <img src="css/image.png"  alt="image" class="img-responsive">
+                </div>	
+                <!-- feature content -->
+                <div class="col-md-8 wow fadeInRight" style="padding-top: 10%;">
+                  <h1><b> Splunk Enterprise Certified Architect </b></h1>
+                  <p  class="text-justify"><b>It is a professional that performs the activities of an architectural unit of forwarding the data, indexing it, and taking it into the search head. Next, the deployment server receives the information, forward the deployment, and manages the license  </b></p>
+                </div>			  
+              </div>			  
+            </div>
+          </div>
+          <br>
+        </section>
+      
+    
+    
+        <!-- feature section -->
+        <section id="AboutUs">
+          <div id="feature">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-8 col-md-offset col-sm-6 text-decoration bar-title wow fadeInLeft">
+    
+                  <!-- feature title -->
+                  <div class="categories">
+                    <div class="well well-sm"><h2><b> What is Splunk Enterprise Architect?</b></h2>
+                    <p class="text-justify">Nowadays, there are huge ups and downs comes in the fields of IT infrastructure that will make you more believe by using it. Recently, I am going to illustrate the Splunk enterprise architect. Now, it starts with the definition. It is a thorough methodology process of deployment and best-practices for the forwarder, indexer, and search head clusters on some stages as accepts the text data as input, parses the data into events, stores events in indexes, & searches and reports. As an architect, certain functions performed by the indexer receive the data from a web server with forwarder instance then indexer takes data from forwarder and sends as events to Splunk index then indexers receives the results from search head and all the information receives by deployment server.   
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6 wow fadeInLeft animated" data-wow-delay=".8s" style="visibility: visible; animation-delay: 0.8s; 		-webkit-animation-delay: 0.8s; animation-name: fadeInLeft; -webkit-animation-name: fadeInRight;">
+                <div class="block">
+                  <img class="img-responsive" src="css/photo.jpg" alt="">
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <!-- feature section -->
+        
+        
+          <!-- feature section -->
+          <div id="feature">
+            <div class="container">
+              <div class="row">
+              <div class="col-md-4 col-sm-6 wow fadeInLeft animated" data-wow-delay=".8s" style="visibility: visible; animation-delay: 0.8s; 		-webkit-animation-delay: 0.8s; animation-name: fadeInLeft; -webkit-animation-name: fadeInLeft;">
+                <div class="block">
+                  <img class="img-responsive" src="css/photo.png" alt="">
+                </div>
+              </div>
+              
+                <div class="col-md-8 col-md-offset col-sm-6 text-decoration feature-title wow fadeInLeft">
+    
+                  <!-- feature title -->
+                  <div class="well well-sm"><h2><b> What are the benefits of Splunk Enterprise Architect?</b></h2>
+                   After mapping the whole process of Splunk certified architect. The real architect manages with Splunk engine. These are attached with the statistically working benefits along with the architect as follows:-
+                  <li><b> Manage the inputs:</b> One of the best part is that monitoring the files, detect file changes, listen to network ports, and run scripts. </li>
+                  <li><b> Indexing the data:</b> this is one of the ideal practices performed by architects as indexing user & engine control, data routing, cloning & load balancing as well as deployment server. </li>
+                  <li><b>Search for the data:</b>  it takes action on the distributed search that is performed by users and collects it for continuous monitoring. </li>
+                  <li><b>Visualize the user’s data:</b>  After searching the data, they acquire knowledge, report it, and scheduling for data.</li>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- feature section -->
+        
+        
+        <!-- feature section -->
+          <div id="feature">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 col-md-offset col-sm-6 text-decoration feature-title wow fadeInRight">
+    
+                  <!-- feature title -->
+                  <div class="well well-lg"><h2><b> Why we should learn Splunk Enterprise Architect?</b></h2>
+                  <p class="text-justify">There is a huge ideology and infrastructure about spunk architects. I will give you schematic thoughts that will make you more advance and the best practitioner. By the planning of architecture, the spunk engine is over there in which inputs with logs and files, indexing the server and engine control, manages the distributed searches, and visualizes the positions of users. This will make it more comfortable and easy to monitor the processed data.
+
+                  </p><br>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- feature section -->
+        
+        
+        
+        <!-- feature section -->
+        <section id="AboutUs">
+          <div id="feature">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 col-md-offset col-sm-4 text-decoration feature-title wow fadeInLeft">
+    
+                  <!-- feature title -->
+                  <div class="well well-lg"><h2><b>What are the best training and courses available to learn splunk enterprise architect?</b></h2>
+                  
+                  <h3><b>These some course you should to learn:-</b></h3>
+        
+                  <h4> Splunk enterprise architect Essential training and course<a href="https://www.devopsschool.com/courses/agenda/devops/devops-training-course-online.html" style="text-decoration:none;" target="_blank">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img border="0" alt="devopsschool" src="C:\Users\Cotocus7\Downloads\Click_here_button-removebg-preview.png" width="130" height="50"> </a></h4>
+                  
+                  <h4> Splunk enterprise architect Intermediate course<a href="https://www.devopsschool.com/courses/agenda/devops/devops-training-course-Java.html" style="text-decoration:none;" target="_blank">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img border="0" alt="devopsschool" src="C:\Users\Cotocus7\Downloads\Click_here_button-removebg-preview.png" width="130" height="50"> </a></h4>
+                  
+                  <h4> Splunk enterprise architect Advance training and course<a href="https://www.devopsschool.com/courses/agenda/devops/devops-training-course-dot-net.html" style="text-decoration:none;" target="_blank">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img border="0" alt="devopsschool" src="C:\Users\Cotocus7\Downloads\Click_here_button-removebg-preview.png" width="130" height="50"> </a></h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- feature section -->
+        
+        
+        
+        
+        
+        
+    
+    
+        <!-- consulting section start -->
+        <section id="consulting">
+          <div id="feature">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 col-md-offset col-sm-12 feature-title wow fadeInRight">
+                <!-- feature title -->
+                  <div class="well well-lg"><h2><b>What are the best trainers for splunk enterprise architect?</b></h2>
+                  <p class="text-justify">Rajesh Kumar is one of the top trainers for splunk enterprise architect in India and having in-depth knowledge of splunk architect. He has done plenty of training for splunk architect. He is available for classroom training and corporate training in India for following city such as Bangalore, Bengaluru, Hyderabad, Pune, Mumbai, Chennai, Gurugram, Noida, Delhi. Also, He is available Worldwide for online training. His CV details are as below;</p><br>
+                  
+                  <p>He has total, Over 15 years of extensive experience working with more than 8 software MNCs for software development/maintenance and production environments involved in continuous improvement and automating entire life cycle using latest devops tools and techniques from design and architecture, through implementation, deployment, and successful operations. Also, helping more than 70 software organizations globally, providing coaching, mentoring and consulting in devops, CICD, cloud, containers, sre, devSecops, microservices and operations.</p><br>
+                  <p style="font-size:30px;"><b>For Trainers CV</b> : <a href="http://rajeshkumar.xyz/cv/" target="_blank"><button class="btn btn-success btn-sm">Click Here</button></a></p>	
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- consulting section end -->
+    
+      
+        <!-- consulting section start -->
+        <section id="consulting">
+          <div id="feature">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 col-md-offset col-sm-12 feature-title wow fadeInLeft">
+                <!-- feature title -->
+                  <div class="well well-lg"><h2><b>What are the best consulting company for splunk enterprise architect?</b></h2>
+                
+                  <h3><b>1. DevOpsSchool.com</b></h3>
+                  <p class="text-justify">The team of expert IT professionals founded scmGalaxy in 2008 and the same team established DevOpsSchool in 2016, is pioneer of organized Training, Support & Consultant in India. In last few years, we became a leading training provider/consultant company in India for Datadog. DevOpsSchool is community based institution for people looking for career growth in Information Technology Sector.</p>
+              
+                  <h3><b>2. devopsconsulting.in</b></h3>
+                  <p class="text-justify" >DevOpsConsulting is a brainchild of passionate technopreneurs having vast experience in managing, designing and delivering large scale enterprise solutions with prime focus on achieving business goals with high performance systems. devopsconsulting.in an IT technologies and consulting firm specialized in DevOps and software practices to improve efficiency and cost effectiveness of an Organization.</p>
+              
+                  <h3><b>3. Cotocus.com</b></h3>
+                  <p class="text-justify">Cotocus offer various IT services to serve client's requirement and have our own experts to deliver the project with given time frame in Datadog. DevOps services help remove manual, error prone tasks from your digital services allowing people to concentrate on the quality of the service. Cotocus automate the releasing of software, testing and server provisioning, helping you to produce regular iterations of your software that’s ready to be released.</p>
+              
+                  <h3><b>4. ScmGalaxy.com</b></h3>
+                  <p class="text-justify">ScmGalaxy.com is a community initiatives based on Software configuration management that helps community members to optimize their software development process, Software Development Life Cycle optimization, Agile Methodologies. It is a leading company in India for DevOps, Cloud and Container autoamation and Datadog.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- consulting section end -->  
+    
+        <!-- Institutes section start -->
+        <section id="institutes">
+          <div id="feature">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 wow fadeInRight">
+                  <!-- feature title -->
+                  <div class="well well-lg"><h2><b>What are the best training Institutes for splunk enterprise architect?</b></h2>
+                  <p>DevOpschool.com and devopscertification.co offer a training cum certification programs for devops and Some of the best DevOps training Institutes are as follows;</p>
+                  <div class="row icon-boxes">
+                    <div class="col-md-8 col-lg-4 d-flex align-items-stretch mb-4 mb-lg-0" data-aos="zoom-in" data-aos-delay="200">
+                      <div class="icon-box">
+                      <div class="icon"><i class="ri-stack-line"></i></div>
+                      <h3 class="title text-center"><b>Hyderabad</b></h3>
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.4815012579134!2d78.36496901487702!3d17.436653388049073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9374321f2023%3A0x811d4d6a973a49dc!2sDevOps%20training%20institute%20in%20Hyderabad%20-%20DevOpsSchool!5e0!3m2!1sen!2sin!4v1590767557995!5m2!1sen!2sin" width="350" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                      </div>
+                    </div>
+                  <div class="col-md-8 col-lg-4 d-flex align-items-stretch mb-4 mb-lg-0" data-aos="zoom-in" data-aos-delay="300">
+                  <div class="icon-box">
+                    <div class="icon"><i class="ri-palette-line"></i></div>
+                      <h3 class="title text-center"><b>Chennai<b></h3>
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.628289442147!2d80.25224991482291!3d13.059316190798393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5267ad55220723%3A0xd46a5c6274d51659!2sDevOps%20training%20institute%20in%20Chennai%20-%20DevOps%20School!5e0!3m2!1sen!2sin!4v1590767737728!5m2!1sen!2sin" width="350" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                  </div>
+                  </div>
+                
+                  <div class="col-md-8 col-lg-4 d-flex align-items-stretch mb-4 mb-lg-0" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="icon-box">
+                      <div class="icon"><i class="ri-command-line"></i></div>
+                      <h3 class="title text-center"><b>Bangalore</b></h3>
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31104.704693680884!2d77.58929017154357!3d12.966215014992367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae15d538ddf0fd%3A0xb4c383b64ef508bf!2sCotocus!5e0!3m2!1sen!2sin!4v1591873559582!5m2!1sen!2sin" width="350" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Institutes section end -->
+        
+        
+        <!-- feature section -->
+        <section id="AboutUs">
+          <div id="feature">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 wow fadeInLeft">
+                  <!-- feature title -->
+                  <div class="well well-lg"><h2><b>How DevOpsSchool training and courses are best for splunk enterprise architect training?</b></h2>
+                  <p class="text-justify">DevOpsSchool provide splunk architect training to aspirants around the world. This training program helps you to learn the core fundamental of splunk architect and real undestanding of the concepts. Our Expert and Instructor helps and guides you to show your creativity at your won paces and understanding. We have Online as well as Offline classes for splunk architect training.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- feature section -->		
+        
+        
+        <!-- Start Gallery 1-2 -->
+        <section id="AboutUs">
+          <div class="container-fluid well">
+            <div class="container">
+              <div class="text-center">
+                <h2 class="wow fadeInRight" style="font-size:45px;">Image Gallery</h2>
+                <div class="row">
+                  <div id="isotope-gallery-container">
+                    <div class="col-md-4 col-sm-6 col-xs-12 gallery-item-wrapper artwork creative">
+                      <div class="gallery-item">
+                        <div class="gallery-thumb">
+                          <img src="css/img_files/1.jpg" class="img-responsive" alt="1st gallery Thumb">
+                          <div class="image-overlay"></div>
+                          <a href="images/works/1.jpg" class="gallery-zoom"><i class="fa fa-eye"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- /.gallery-item-wrapper -->
+                    <div class="col-md-4 col-sm-6 col-xs-12 gallery-item-wrapper nature outside">
+                      <div class="gallery-item">
+                        <div class="gallery-thumb">
+                        <img src="css/img_files/2.jpg" class="img-responsive" alt="2nd gallery Thumb">
+                        <div class="image-overlay"></div>
+                        <a href="images/works/2.jpg" class="gallery-zoom"><i class="fa fa-eye"></i></a>
+                        </div>
+                      
+                      </div>
+                    </div>
+                    <!-- /.gallery-item-wrapper -->
+                    <div class="col-md-4 col-sm-6 col-xs-12 gallery-item-wrapper photography artwork">
+                      <div class="gallery-item">
+                        <div class="gallery-thumb">
+                        <img src="css/img_files/3.jpg" class="img-responsive" alt="3rd gallery Thumb">
+                        <div class="image-overlay"></div>
+                        <a href="images/works/3.jpg" class="gallery-zoom"><i class="fa fa-eye"></i></a>
+                        
+                        </div>
+                      
+                      </div>
+                    </div>
+                    <!-- /.gallery-item-wrapper -->
+                    <div class="col-md-4 col-sm-6 col-xs-12 gallery-item-wrapper creative nature">
+                      <div class="gallery-item">
+                        <div class="gallery-thumb">
+                          <img src="css/img_files/4.jpg" class="img-responsive" alt="4th gallery Thumb">
+                          <div class="image-overlay"></div>
+                          <a href="images/works/4.jpg" class="gallery-zoom"><i class="fa fa-eye"></i></a>
+                          
+                        </div>
+                         
+                      </div>
+                    </div>
+                    <!-- /.gallery-item-wrapper -->
+                    <div class="col-md-4 col-sm-6 col-xs-12 gallery-item-wrapper nature">
+                      <div class="gallery-item">
+                        <div class="gallery-thumb">
+                          <img src="css/img_files/5.jpg" class="img-responsive" alt="5th gallery Thumb">
+                          <div class="image-overlay"></div>
+                          <a href="images/works/5.jpg" class="gallery-zoom"><i class="fa fa-eye"></i></a>
+                          
+                        </div>
+                       
+                      </div>
+                    </div>
+                    <!-- /.gallery-item-wrapper -->
+                    <div class="col-md-4 col-sm-6 col-xs-12 gallery-item-wrapper artwork creative">
+                      <div class="gallery-item">
+                        <div class="gallery-thumb">
+                          <img src="css/img_files/6.jpg" class="img-responsive" alt="6th gallery Thumb">
+                          <div class="image-overlay"></div>
+                          <a href="images/works/6.jpg" class="gallery-zoom"><i class="fa fa-eye"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <!--// End Gallery 1-2 --> 
+        
+        
+        
+    
+        <!--YouTube Testimonials -->
+        <section id="youtube-testimonial">
+          <div class="container-fluid well">
+          <div class="container">
+            <div class="text-center">
+              <h1 class="wow fadeInLeft">Video Gallery</h1>
+              <div class="card-body mt-1">
+                <div class="row">
+                  <div class="col-lg-3 col-sm-12 col-md-8">
+                    <iframe width="280" height="180" src="https://www.youtube.com/embed/0p9JJobuVTg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                  <div class="col-lg-3 col-sm-12 col-md-8 sn font-weight-bold">
+                    <iframe width="280" height="180" src="https://www.youtube.com/embed/J_9nNC8YylM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                  <div class="col-lg-3 col-sm-12 col-md-8  sn font-weight-bold">
+                    <iframe width="280" height="180" src="https://www.youtube.com/embed/N7NpF1ouguU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                  <div class="col-lg-3 col-sm-12 col-md-8  sn font-weight-bold">
+                    <iframe width="280" height="180" src="https://www.youtube.com/embed/0-z1G0BFZSU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                  
+                  <div class="col-lg-3 col-sm-12 col-md-8  sn font-weight-bold">
+                    <iframe width="280" height="180" src="https://www.youtube.com/embed/UjCVCvdI73w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                  
+                  <div class="col-lg-3 col-sm-12 col-md-8  sn font-weight-bold">
+                    <iframe width="280" height="180" src="https://www.youtube.com/embed/tO-QsbpI-78" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                  
+                  <div class="col-lg-3 col-sm-12 col-md-8  sn font-weight-bold">
+                    <iframe width="280" height="180" src="https://www.youtube.com/embed/K704yzCo6Lc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                  
+                  <div class="col-lg-3 col-sm-12 col-md-8  sn font-weight-bold">
+                    <iframe width="280" height="180" src="https://www.youtube.com/embed/VTcQJciaPu4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                  
+                  
+                </div>
+                <br>
+                <center><a href="https://www.youtube.com/watch?v=0VofoWvECmk&list=PL8DSonqBNdRqQux7gBNUjplp5YPinZQGC" target="_blank"><button class="bg-primary">See More Reviews</button></a></center>
+              </div>
+            </div>
+          </div>
+          </div>
+        </section>
+        <!--YouTube Testimonials End-->
+    
+    
+    
+    
+        <!--======================footer start======================-->
+    
+          <footer class="webintern-footer">
+            <div class="webintern-footer-inner">
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm-6 col-md-3 ">
+                    <a class="webintern-footer-logo" href="#">
+                      <img src="css/image.02.png" style="border-radius:10px;" height="80" width="159">
+                    </a>
+                    <div class="simple-text dark padding-sm">
+                      <p> Lets learns Share and Practices</p>
+                      <p> Call us for more information:</p>
+                      <p> +91 700 483 5930 | +91 700 483 5706</p>
+                      <p> Email: Contact@DevopsSchool.com</p>
+                    </div>
+                    <div class="empty-space xs-25 sm-25"></div>
+                  </div>
+                  <div class="col-sm-6 col-md-2 footer-2">
+                    <!-- webintern_footer_title -->
+                    <h4 class="webintern_footer_title h5"><small>Useful Links</small></h4>
+                    <ul class="webintern-footer-list">
+                    <li><a href="https://www.devopsschool.com/" target="_blank">DevOpsSchool</a></li>
+                    <li><a href="http://www.scmgalaxy.com/" target="_blank">scmGalaxy</a></li>
+                    <li><a href="contact.html" target="_blank">Contact Us</a></li>
+                    </ul>
+                    <div class="empty-space xs-25 sm-25"></div>
+                  </div>
+                  <div class="col-sm-6 col-md-3 footer-3">
+                    <!-- webintern_footer_title -->
+                    <h4 class="webintern_footer_title h5"><small> More Details </small></h4>
+                    <ul class="webintern-footer-list">
+                    <li><a href="http://www.devopstrainer.in" target="_blank">DevOps Trainers</a></li>
+                    <li><a href="http://www.devopscertification.co" target="_blank">DevOps Certification</a></li>
+                    <li><a href="http://www.rajeshkumar.xyz" target="_blank">Rajesh Kumar</a></li>
+                    </ul>
+                    <div class="empty-space xs-25"></div>
+                  </div>
+                  <div class="col-xs-12 col-md-4 col-sm-6">
+                    <div class="marg-sm-b30"></div>
+                    <!-- webintern_footer_title -->
+                    <h4 class="webintern_footer_title h5"><small>Subscribe Our Services</small></h4>
+                    <div class="empty-space marg-lg-b20"></div>
+                    <!--
+                    <div class="simple-text last dark ">
+                    <p>Get latest updates and offers.</p>
+                    </div>
+                    -->
+                    <div class="empty-space marg-lg-b15"></div>
+                    <!-- TT-SUBSCRIBE -->
+                    <form  method="post">
+                    <div class="tt-subscribe">
+                    <input type="text" required="" placeholder="Enter your email">
+                    <div class="tt-subscribe-submit mb-4">
+                    
+                    <input type="submit" value="">
+                    </div>
+                    </div>
+                    </form>
+                    <div class="empty-space marg-lg-b40"></div>
+                    <!-- TT-SOCAIL -->
+                    <ul class="mb-8 list-inline" style="margin-top:40px">
+                    <li class=""><a class="nav-link" href="https://www.facebook.com/DevOpsSchool/" target="_blank"><i class="fa fa-facebook text-white fa-2x "></i></a></li>
+                    <li class=""><a class="nav-link" href="https://twitter.com/DevOpsSchools" target="_blank"><i class="fa fa-twitter text-white fa-2x "></i></a></li>
+                    <li class=""><a class="nav-link" href="https://www.instagram.com/devopsschool/" target="_blank"><i class="fa fa-instagram text-white fa-2x"></i></a></li>
+                    <li class=""><a class="nav-link" href="https://plus.google.com/100509567956930374127" target="_blank" title="Subscribe us on YouTube"><i class="fa fa-youtube text-white fa-2x"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tt-copy">
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="text-center">Copyright DevOpsSchool 2020. All rights reserved. </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+        <!---footer end--->
+    
+	
+			<!-- javascript files -->
+			<script src="jquery.js 01.js"></script>
+			<script src="bootstrap.min.js 02.js"></script>
+			<script src="pe-icon-7-stroke.css 03.css"></script>
+			<script src=" jquery.sticky.js 04.js"></script>
+			<script src="wow.min.js 05.js"></script>
+			<script src="owl.carousel.min.js 06.js"></script>
+			<script src="ekko-lightbox-min.js 07.js"></script>
+			<script type="text/javascript">
+			$(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) { event.preventDefault(); $(this).ekkoLightbox(); }); 
+			</script>
+		<script>
+			new WOW().init();
+		</script>
+	</body>
+</html>
